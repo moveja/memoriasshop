@@ -9,7 +9,9 @@
     
     
     <!-- BEGIN estilos -->
+    
     @include('layouts.theme.styles')
+    @livewireStyles
     <!-- estilos -->
 
 </head>
@@ -21,8 +23,9 @@
 
 
     <!--  HEADER NAVBAR  -->
+    <div>
     @include('layouts.theme.header')
-
+    </div>
     <!--  BEGIN MAIN CONTAINER  -->
     <div class="main-container" id="container">
 
@@ -30,7 +33,9 @@
         <div class="search-overlay"></div>
 
         <!--  MENU SIDEBAR  -->
+        <div>
         @include('layouts.theme.sidebar')
+        </div>
         <!--  MENU SIDEBAR  -->
         
         <!--  AREA DE CONTENIDO  -->
@@ -39,24 +44,30 @@
         <div class="layout-px-spacing"> 
             
             <!--  MENU SIDEBAR  -->
+            <div>
             @yield('content')
-     
-
-
+            </div>
         </div>
 
         <!--  FOOTER  -->
+        <div>
         @include('layouts.theme.footer')
+        </div>
 
 
         </div>
         <!--  AREA DE CONTENIDO  -->
 
     </div>
- 
+    
+    <div>
 
     <!-- SCRIPTS -->
+    
+    
     @include('layouts.theme.scripts')
+    @livewireScripts
+    </div>
 
 </body>
 </html>

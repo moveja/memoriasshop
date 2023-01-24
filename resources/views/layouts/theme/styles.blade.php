@@ -1,6 +1,8 @@
 <script src="{{ asset('assets/js/loader.js') }}"></script>
 <link href="{{ asset('assets/css/loader.css') }}" rel="stylesheet" type="text/css" />
+
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
+
 <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{ asset('assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
 <link href="{{ asset('assets/css/structure.css') }}" rel="stylesheet" type="text/css" class="structure" />
@@ -10,15 +12,20 @@
 
 <link href="{{ asset('assets/css/elements/avatar.css') }}" rel="stylesheet" type="text/css">
 
-<link href="{{ asset('plugins/sweetalerts/sweetalerts.css')}}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('plugins/sweetalerts/sweetalert.css')}}" rel="stylesheet" type="text/css" />
 <link href="{{ asset('plugins/notification/snackbar/snackbar.min.css')}}" rel="stylesheet" type="text/css">
 
 <link href="{{ asset('css/custom.css') }}" rel="stylesheet" type="text/css" />
 
 <link rel="stylesheet" type = "text/css" href = "{{ asset('assets/css/widgets/modules-widgets.css') }}">
 <link rel="stylesheet" type = "text/css" href = "{{ asset('assets/css/forms/theme-checkbox-radio.css')}}">
-<!--<link href="{{ asset('plugins/apex/apexcharts.css') }}" rel="stylesheet" type="text/css">-->
-<!--<link href="{{ asset('assets/css/dashboard/dash_2.css') }}" rel="stylesheet" type="text/css" />-->
+
+<link href="{{ asset('assets/css/apps/scrumboard.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('assets/css/apps/notes.css') }}" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="{{ asset('css/apexcharts.css') }}" />
+
+
 <style>
     aside {
         display: none!important;
@@ -44,6 +51,24 @@
         }
 
     }
-</style>
+    /*color de la barra de menu*/
+    .sidebar-theme #compactSidebar {
+    background: #191e3a!important;
+    }
+    /*color del boton del menu*/
+    .header-container .sidebarCollapse {
+    color: #3B3F5C;
+    }
+    .navbar .navbar-item .nav-item form.form-inline input.search-form-control {
+    font-size: 15px;
+    background-color: #3B3F5C!important;
+    padding-right: 40px;
+    padding-top: 12px;
+    border: none;
+    color: #fff;
+    box-shadow: none;
+    border-radius: 30px;
+    }
 
-@livewireStyles
+</style>
+<link href="{{ asset('plugins/flatpickr/flatpickr.dark.css') }}" rel="stylesheet" type="text/css" />
